@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="22.0" layoutY="24.0" text="From" />
+      <Label layoutX="22.0" layoutY="60.0" text="To" />
+      <Label layoutX="20.0" layoutY="93.0" text="Subject" />
+      <Label fx:id="attachmentLabel" layoutX="99.0" layoutY="144.0" text="No Attachements" />
+      <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" onAction="#attachBtnAction" text="Attach" AnchorPane.leftAnchor="14.0" />
+      <ChoiceBox fx:id="senderChoice" layoutX="110.0" layoutY="19.0" prefHeight="27.0" prefWidth="538.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="recipientField" layoutX="110.0" layoutY="55.0" prefHeight="27.0" prefWidth="538.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="subjectField" layoutX="110.0" layoutY="97.0" prefHeight="27.0" prefWidth="538.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="15.0" />
+      <HTMLEditor fx:id="composeArea" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="22.0" layoutY="188.0" prefHeight="471.0" prefWidth="623.0" AnchorPane.bottomAnchor="59.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="188.0" />
+      <Label fx:id="errorLabel" layoutX="27.0" layoutY="685.0" text="no error for now" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="27.0" />
+      <Button layoutX="573.0" layoutY="672.0" mnemonicParsing="false" onAction="#sendBtnAction" prefHeight="27.0" prefWidth="59.0" text="Send" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="31.0" />
+   </children>
+</AnchorPane>
